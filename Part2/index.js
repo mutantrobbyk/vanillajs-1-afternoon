@@ -8,6 +8,13 @@ function setCard() {
     card.style.color = setColor.value
 }
 function reloadPage() {
-    window.location.reload()
+    const heart = document.getElementById('hearts')
+    const diamond = document.getElementById('diamonds')
+    const club = document.getElementById('clubs')
+    const spade = document.getElementById('spades')
+    heart.style.removeProperty('color')
+    diamond.style.removeProperty('color')
+    club.style.removeProperty('color')
+    spade.style.removeProperty('color')
 }
 
